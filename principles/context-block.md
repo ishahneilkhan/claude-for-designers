@@ -1,12 +1,3 @@
----
-created: 2026-07-27
-updated: 2026-07-31
-type: reference
-status: complete
-class: 1
-tags: [ostad, workbook, principles, context-block, defaults, student-editable]
----
-
 # Your Context Block: your defaults
 
 **What this file is for:** the kind of designer you are, and the kind of work and users you usually deal with. Your starting position on any new job.
@@ -66,7 +57,6 @@ You have a line somewhere. Say where it is, because Claude will happily walk str
 The second half is the interesting part.
 
 
----
 
 ## The bar
 
@@ -101,3 +91,26 @@ In Class 1 you also copy `projects/_new-client/` and fill in `context.md` for a 
      Claude reads this file on every task at this level. Teaching text
      left here costs you usage on every single call and buries the
      answers that matter. -->
+1. What kind of clients keep finding you, and what do they have in common?
+
+My clients and projects have ranged from startups to institutional work — including my current role as Lead UX Digital Expert at Yaqeen Institute. What connects them is that they need someone who thinks like a product leader, not just an executor.
+
+2. What kind of work do you do your best work on, and what kind do you struggle with?
+
+I do my best work on Web/UX design — that's where I'm fastest and most confident. Flutter/mobile development is something I still find harder and slower to execute.
+
+3. What do you know about the market you usually serve that a designer from outside it would get wrong?
+
+Outsiders often assume card payment is the default here — it's not. Mobile financial services like bKash are far more trusted and widely used, and that changes how payment flows need to be designed.
+
+4. What surface do you usually design for, and what is your floor on it?
+
+I mostly design for mid-range Android phones — I don't assume flagship devices or ideal network conditions.
+
+5. What do you refuse to design, or refuse to design without pushing back first?
+
+I refuse to design misleading UI — anything that tricks or confuses the user into an unintended action. I push back before building it.
+
+6. When a brief arrives with no research in it, what do you assume by default, and how often does that assumption turn out to be right?
+
+With no research in the brief, I assume users already have some familiarity with similar apps and don't need heavy onboarding. This holds true more often than not, though it occasionally misses first-time users.
