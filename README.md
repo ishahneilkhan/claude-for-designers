@@ -38,3 +38,9 @@ Root versus project. Root holds what is true about you: how you work, your taste
 Select a Folder is a decision. Open Claude Code at the root when the work spans projects (writing your contract, building a skill). Open at the project folder when you are doing client work. Opening at the wrong level is how you get generic output, or one client's context leaking into another's.
 Context has two levels, and rule 1 decides which. principles/context-block.md holds your defaults: the kind of designer you are, the clients who keep finding you, the surface you usually work on. projects/<client>/context.md holds that client's users and overrides your defaults. If your clients change every few weeks, which is normal, this split is what stops you starting from blank every time.
 The nine-step process
+
+[
+](https://github.com/ishahneilkhan/claude-for-designers/blob/main/assets/Flow.png)
+
+
+
