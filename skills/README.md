@@ -1,0 +1,85 @@
+# Skills
+
+Nine files. Nine slash commands. Seven of them are Julian Oczkowski's design sequence, run in order. Two are extra critique passes.
+
+Every class from Class 2 to Class 6 runs one or two of them. If you skip a step, the next step does that step's work badly.
+
+## The seven, in sequence order
+
+| Step | Command | What it does | Class | Where the output goes |
+|---|---|---|---|---|
+| 1 | `/grill-me` | Interrogates you until the brief has no soft spots left. | 2 | `principles/claude-contract.md` (C2), then `projects/edubridge/brief-v3-interrogated.md` (C3) |
+| 2 | `/design-brief` | Turns the interrogation into one source of truth for the project. | 3 | `projects/edubridge/brief-v3-interrogated.md` |
+| 3 | `/information-architecture` | Maps every screen, the navigation pattern, and the two critical flows. | 5 | `projects/edubridge/tokens.md`, under a `## Screens and flows` heading you add at the top |
+| 4 | `/design-tokens` | Fixes color, type, spacing, radius and motion as named tokens. | 5 | `projects/edubridge/tokens.md` |
+| 5 | `/brief-to-tasks` | Breaks the brief into tasks, each with a "done when" line. | 6 | No file. It stays in the session you build in. |
+| 6 | `/frontend-design` | Builds the screen from the brief and the tokens, not from a guess. | 6 | `projects/edubridge/my-booking-screen.html` (never `booking-screen.html`, that one is read-only reference) |
+| 7 | `/design-review` | Reviews the screen on layout, accessibility, responsiveness, dark mode, edge cases. | 4 | `projects/edubridge/critique-notes.md` |
+
+## The two extras
+
+| Command | What it does | Class | Where the output goes |
+|---|---|---|---|
+| `/heuristic-evaluation` | Audits against Nielsen's ten heuristics, evidence and a fix per finding. | 4 | `projects/edubridge/critique-notes.md` |
+| `/persona-acid-test` | Reads the work three times: confused user, skeptical engineer, impatient PM. | 3 | `projects/edubridge/brief-v3-interrogated.md` (C3), then `critique-notes.md` when you rerun it on the built screen |
+
+### Why the class order is not the step order
+
+Steps 1 to 7 are the order you run these on a real project, start to finish. The course order differs in one place: `/design-review` and `/heuristic-evaluation` arrive in Class 4, before information architecture and tokens in Class 5.
+
+That is deliberate. Class 4 is where you learn to critique, using a throwaway screen generated from the confused brief. Critique is the skill everything after it depends on. You run `/design-review` again in Class 6, on the screen you actually ship, and that is the run that counts.
+
+## Where the output goes, and why that column matters most
+
+**A skill never creates a file.** It produces text in your session. You paste that text into the file for that class. The tables above tell you which file.
+
+There is no `design-brief.md`. There is no `ia.md`, no `review.md`, no `grill-me-output.md`. In the last batch a student ran `/grill-me`, got a clean Requirements Handshake, and then sat for hours asking the group chat whether it had become a new file. It does not. It goes into a file that already exists in your project folder, waiting for it.
+
+Two rules on pasting:
+
+- Paste the whole output, not a summary. The open questions and the assumptions sections are the parts the next skill reads.
+- Keep the labels the skill gave you. `/grill-me` labels its output Requirements Handshake. `/design-review` labels its verdicts Pass, Needs work, Fail. Those labels are how Claude finds the right section next week.
+
+One more, from the two file-location rules: output about **you** goes at root, output about **the client** goes in the project folder. That is why `/grill-me` in Class 2 lands in `principles/claude-contract.md` and the same skill in Class 3 lands in the project.
+
+## Installing these
+
+You install them in Class 2, because Class 2 is the first class that runs one (`/grill-me`). Follow the install steps in the [top-level README](../README.md). After that, the slash command is all you type.
+
+If the install has not worked yet, you are not blocked. Open the skill file, copy the whole thing into your Claude Code session, then name the file you want it run against. Same text, same behaviour. Bring the broken install to the class or the office hour.
+
+Model: Sonnet 5 at medium effort, for all nine. Each skill fits in one Claude session. Class 6 is the exception: `/brief-to-tasks` and then `/frontend-design` needs two sessions, because the build session has to hold your tokens file the whole way through.
+
+## Running /grill-me without drowning
+
+In the last batch a student answered roughly thirty questions from `/grill-me` and wrote in the group chat that he was dying. He was right to stop. That is a scoping failure, not a stamina problem, and you fix it in the invocation, not halfway through.
+
+Cap it before you start. Paste this line right after the skill text:
+
+> Four groups. Maximum three questions per group. One group at a time. After group four, stop asking and write the Requirements Handshake.
+
+Twelve questions. Not thirty.
+
+Three rules that keep it moving once it starts:
+
+1. **"I do not know. Assume X and move on" is a legitimate answer.** It is not a failure and it stalls nothing. It goes into the Assumptions being carried forward section of the handshake, which is exactly what that section exists for. An unknown you wrote down is worth more to the next step than a guess you dressed up as a fact.
+2. **One line per answer.** No paragraphs. Claude expands whatever you give it, so long answers buy you longer follow-ups.
+3. **Push back when it repeats itself.** "Answered in group one. Move on." It will.
+
+Set a timer for twenty minutes. When it goes off: "Time is up. Write the handshake with what we have. Everything unanswered goes in open questions." A handshake with six open questions in it is a working document you can take to a client. Thirty answered questions you resented is not.
+
+## How these pair with principles/
+
+Skills are verbs. Principles are constraints. Every skill here assumes the files in `../principles/` are loaded. That is how Claude knows your voice, your taste rules, and the market you design for.
+
+If a skill's output feels generic, the principles are probably not being read. Check the level you opened Claude Code at: the project folder for client work, the root for anything about how you work.
+
+## Modifying skills
+
+These are starting points. Tune them as you do real work. Edit the .md files directly; changes take effect in your next conversation.
+
+Common edits:
+
+- Add a project-specific question to `grill-me.md` if the same kind of brief keeps landing on you.
+- Change the review dimensions in `design-review.md` if your domain has its own failure modes (medical, legal, financial).
+- Rename the tokens in `design-tokens.md` to match what your developer already uses.
