@@ -21,96 +21,19 @@ The test is the same one you will learn in Class 2: would it still be true on yo
 If your clients change every few weeks, which is normal on a marketplace or in an agency, this file matters MORE, not less. It is what stops you starting from a blank page on every new gig.
 -->
 
----
+# Your Context Block: your defaults
 
-## YOUR TURN
-
-<!-- Think about all of these. Write down five to seven lines. The questions are the thinking; the block is what is left after the thinking. Do not answer them one line each. -->
-
-**1. What kind of clients keep finding you, and what do they have in common?**
-
-Not the kind you wish for. The ones who actually message you. If three of your last five jobs looked alike, say what the pattern was.
-
-
-**2. What kind of work do you do your best work on, and what kind do you struggle with?**
-
-Both halves matter. The second one is the more useful answer, and the harder one to write.
-
-
-**3. What do you know about the market you usually serve that a designer from outside it would get wrong?**
-
-If you cannot think of anything, you have not looked. Every market has at least three things outsiders assume that are false here.
-
-
-**4. What surface do you usually design for, and what is your floor on it?**
-
-Name it exactly. "Redmi A3 on 3G in Mirpur" beats "low-end Android". "Desktop, Chrome, 1440px, internal admin tool" is an equally valid answer. **Do not assume mobile.** Plenty of client work is dashboards, admin panels, landing pages and storefronts.
-
-
-**5. What do you refuse to design, or refuse to design without pushing back first?**
-
-You have a line somewhere. Say where it is, because Claude will happily walk straight past it.
-
-
-**6. When a brief arrives with no research in it, what do you assume by default, and how often does that assumption turn out to be right?**
-
-The second half is the interesting part.
-
-
-
-## The bar
-
-Here is a filled example. It belongs to a different designer, working on different things, in a different market. **Read it for the standard, not for the sentences.** If more than two of your lines look like more than two of these lines, you copied instead of thinking.
-
-```
 My defaults:
-- Most of my work arrives from offshore clients who have never used their
-  own product in my market.
-- I do best on flows where trust has to be earned before money moves.
-  I struggle with brand and marketing pages.
-- Outsiders assume a card is the default payment method here. It is not,
-  and the flow shape changes because of that.
-- My floor is a Redmi A3 on 3G, unless the brief says desktop, and then
-  it is Chrome at 1366px on a five-year-old laptop.
-- I will not design a flow that hides a total price until the last screen.
-- With no research in the brief I assume the buyer and the user are
-  different people. I am right about two thirds of the time.
-```
-
-Six lines. Short enough to paste at the top of any prompt, specific enough that Claude cannot fall back on defaults.
-
-Notice what is not in there: no age range, no "18 to 45", no "mobile-first users who value simplicity". Those are demographics, and demographics are not context. Every line above is something the writer learned by watching somebody, and every line changes a design decision.
-
----
-
-## What happens next
-
-In Class 1 you also copy `projects/_new-client/` and fill in `context.md` for a real brief of your own. That file is where **this client's** users go. This file is what you start from when you have not met them yet.
-
-<!-- DELETE EVERYTHING ABOVE THIS LINE once your answers are written.
-     Claude reads this file on every task at this level. Teaching text
-     left here costs you usage on every single call and buries the
-     answers that matter. -->
-1. What kind of clients keep finding you, and what do they have in common?
-
-My clients and projects have ranged from startups to institutional work — including my current role as Lead UX Digital Expert at Yaqeen Institute. What connects them is that they need someone who thinks like a product leader, not just an executor.
-
-2. What kind of work do you do your best work on, and what kind do you struggle with?
-
-I do my best work on Web/UX design — that's where I'm fastest and most confident. Flutter/mobile development is something I still find harder and slower to execute.
-
-3. What do you know about the market you usually serve that a designer from outside it would get wrong?
-
-Outsiders often assume card payment is the default here — it's not. Mobile financial services like bKash are far more trusted and widely used, and that changes how payment flows need to be designed.
-
-4. What surface do you usually design for, and what is your floor on it?
-
-I mostly design for mid-range Android phones — I don't assume flagship devices or ideal network conditions.
-
-5. What do you refuse to design, or refuse to design without pushing back first?
-
-I refuse to design misleading UI — anything that tricks or confuses the user into an unintended action. I push back before building it.
-
-6. When a brief arrives with no research in it, what do you assume by default, and how often does that assumption turn out to be right?
-
-With no research in the brief, I assume users already have some familiarity with similar apps and don't need heavy onboarding. This holds true more often than not, though it occasionally misses first-time users.
+- My clients range from startups to institutional work — currently Lead UX
+  Digital Expert at Yaqeen Institute. What connects them is they need
+  product thinking, not just execution.
+- I do my best work on Web/UX design — fastest and most confident there.
+  Flutter/mobile development is slower and harder for me.
+- Outsiders assume card payment is default here — it is not. Mobile
+  financial services like bKash are far more trusted and widely used.
+- My floor is a mid-range Android phone — I don't assume flagship
+  devices or ideal network conditions.
+- I refuse to design misleading UI that tricks users into unintended
+  actions; I push back before building it.
+- With no research in the brief, I assume users already have some app
+  familiarity and skip heavy onboarding — right more often than not.
