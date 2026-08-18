@@ -1,1 +1,0 @@
-# claude-for-designers
