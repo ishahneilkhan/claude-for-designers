@@ -1,0 +1,89 @@
+---
+created: 2026-07-27
+type: brief
+status: complete
+tags: [edubridge, class-3, reference, brief]
+project: EduBridge Bangladesh
+brief-version: "2: PM thread"
+source: Rafi Hossain (PM), via WhatsApp + email
+received: 3 days after the client brief
+---
+
+# EduBridge BD: The PM Thread
+
+**Reference, not homework.** This is the brief as it actually arrives: in fragments, out of order, contradicting the document. You read it, you do not edit it. Your work for Class 3 goes in `brief-v3-interrogated.md`.
+
+*This is the second version of the brief. It does not arrive as a document. It arrives as a thread.*
+
+The point of this file is to show you what really happens when a brief reaches the local team. Most BD designers receive something polished from an offshore client, then watch it deteriorate as a local PM adds context, scope, and contradictions in fragments. Read both versions and notice where they conflict.
+
+---
+
+**WhatsApp, 9:14 PM**
+**[Rafi, PM]:** bro did u see the brief Jamie sent? client wants designs by end of month. lol. u free tmrw to discuss?
+
+---
+
+**WhatsApp, 9:47 PM**
+**[Rafi, PM]:** also I forgot to mention on the call: they want mobile too. not just responsive. like a proper mobile experience. Jamie mentioned it after you dropped. not in the brief but yeah its a must
+
+---
+
+**Email, next morning, 8:22 AM**
+**From:** Rafi Hossain
+**To:** [You]
+**Subject:** Re: EduBridge BD: quick adds from the client
+
+Hey,
+
+Few things I forgot to loop you in on from yesterday's internal sync with Jamie's team.
+
+1. Payment. I raised the card checkout with Jamie's team and it got complicated, so read this bit properly.
+
+   They know about bKash. That was not the problem. Jamie's exact words were "fine, we'll swap the card form for a bKash button." His team is treating it as a logo change on one screen.
+
+   Here is what I actually need you to work out. Cards do exist here, we can take them through SSLCOMMERZ, but most of our users will not have one. So realistically we need **both**: SSLCOMMERZ for the card minority, and bKash or Nagad for everyone else. And the mobile-money path is not their screen with a different button on it. You leave our site, you go to the bKash app, you enter your PIN, you get an OTP, you come back with a transaction ID that you type in by hand, and then it sits there until it is verified. That is not one screen.
+
+   Jamie's team have not seen this happen. They have UK numbers showing the card checkout converting at 19% and they trust it, so "it needs to be different here" is going to need more from you than my say-so.
+
+   Germany and the UAE are apparently getting the same one-checkout instruction. The UAE team have already pushed back about local cards. So we are not the only ones, which might help you or might not.
+
+2. The navy and green brand colors: Jamie's team sent updated brand guidelines this morning. The green changed to `#00A651`. They also want to use the color for trust signals. Not sure what that means exactly, just flagging.
+
+3. Client saw Preply last week and now they want video calling built into the booking flow. I told them MVP but they pushed back. Can you design for it and we will figure out the build side.
+
+4. One more thing: parents are actually the real decision-makers here, not the students. Client agrees but didn't update the brief. Keep it in mind.
+
+5. Timeline is same. End of month. Three weeks.
+
+Let me know if you have Qs. I'm on calls most of the day but WhatsApp me.
+
+Rafi
+
+---
+
+**WhatsApp, 2:31 PM**
+**[Rafi, PM]:** oh and Jamie's manager asked if we can add Bengali to the MVP. Jamie said optional but his manager said "strongly preferred." so probably yes. idk you decide lol
+
+---
+
+**WhatsApp, 6:55 PM**
+**[Rafi, PM]:** forgot: client wants tutor background verification visible on the profile. like a badge. they said "trust is the main thing"
+
+---
+
+**WhatsApp, 6:58 PM**
+**[Rafi, PM]:** also Jamie said "we can pivot fast if the market feedback is different": I think that means more work later, just flag it if timeline becomes an issue
+
+---
+
+**WhatsApp, 7:12 PM**
+**[Rafi, PM]:** one last thing. budget is 3 lakhs for the full design sprint. so roughly 3 weeks of your time. client thinks that covers everything including revisions
+
+---
+
+## How this file is used in the course
+
+- **Class 3:** you run `/design-brief` over this thread and the client brief together. It should surface the contradictions: desktop-first versus mobile-must, one global checkout versus a payment flow that is a different *shape* here, English versus Bengali, students-as-primary versus parents-as-decision-makers, and a three-week fixed budget that now has video calling in it. Your decisions go in `brief-v3-interrogated.md`, the commercial ones go in `engagement.md`, then `/persona-acid-test` checks whether they hold.
+- **The payment item is the hardest one and it is not about brand names.** Nobody is confused about whether bKash exists. The question is what a mobile-money flow does to a checkout designed around one instant card screen, how many screens and error states that adds, and who pays for the extra work. That last part is why it lands in `engagement.md` as well as in the brief.
+- **Class 4:** when you critique a generated screen, this thread is the reason most generated screens are wrong. They follow the client brief, not the real one.
