@@ -1,3 +1,4 @@
+https://github.com/ishahneilkhan/claude-for-designers/blob/main/assets/Banner.png 
 Claude for Designers
 A working repository for designers who use Claude as a collaborator. Skills, principles, project templates, and a career vault. Not a pile of prompts to paste, a system to work inside.
 
