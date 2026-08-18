@@ -1,6 +1,3 @@
-Assignment 01
-| class   | 1          |
-
 # Your Context Block: your defaults
 
 My defaults:
