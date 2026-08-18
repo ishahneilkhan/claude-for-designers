@@ -42,5 +42,67 @@ The nine-step process
 [
 ](https://github.com/ishahneilkhan/claude-for-designers/blob/main/assets/Flow.png)
 
+Run them in order on any project. Skip a step and the next one does that step's work badly.
+
+What's in here
+claude-for-designers/
+├── CLAUDE.md              what Claude reads when you open this folder
+├── principles/            the knowledge layer: how you work
+│   ├── claude-contract.md     your working contract with Claude
+│   ├── design-taste.md        taste principles for designers using AI
+│   ├── anti-ai-slop.md        patterns to refuse to ship
+│   └── context-block.md       your defaults: your market, clients and surface
+├── skills/                the capability layer: the nine commands
+├── projects/              where work happens, one folder per client
+│   ├── _new-client/           EMPTY TEMPLATE. Copy this for every real client
+│   ├── _brief-bank/           four practice briefs that are not EduBridge
+│   └── edubridge/             the worked example, brief through built screen
+└── career-vault/          positioning, case study, proposal, resume, interview, profile
+principles/ is the part most people skip and the part that makes the difference. Claude reads it before it does anything, so the first draft already sounds like your work instead of everyone's.
+
+Install
+Getting the repo. The green Code button on GitHub gives you a ZIP: download and unzip it, no Git needed. Or clone it if you know Git. The contents are identical. The unzipped folder may be named claude-for-designers-main, which is fine.
+
+Model settings. Sonnet 5 at medium effort, for everything in this course. Do not spend your session budget on a bigger model.
+
+Turning the nine skills into slash commands. You need this from Class 2, which is the first class that runs one (/grill-me).
+
+No terminal. Open Claude Code at the root of this folder and paste this:
+
+Install the nine skills in the skills/ folder as slash commands for me.
+Each one needs to end up at ~/.claude/skills/<skill-name>/SKILL.md, where
+<skill-name> is the filename without .md. Do not change any of the contents.
+Then list the nine folders you created so I can check.
+That is it. Claude Code has file access, so it does the copying and tells you what it did. Restart Claude Code, type /, and the nine commands appear.
+
+Getting Claude to do your setup is not cheating and it is not a shortcut. It is the first time in this course that you direct it at a real task instead of a design task, and it is a fair preview of the rest.
+
+If you would rather run it yourself in a terminal
+If the skills do not appear after a restart, that is an office hours question. Do not reinstall repeatedly.
+
+Start your own client
+Duplicate the empty template, never EduBridge. EduBridge is filled in as the answer key; duplicating it means dragging one client's users, tokens and decisions into another client's folder.
+
+No terminal needed. Right-click the _new-client folder, choose Duplicate, rename the copy. On Windows, copy and paste it, then rename. Or just tell Claude Code: "duplicate the _new-client folder and call it acme-fintech."
+
+Getting Claude to do the boring part is the point, not a shortcut.
+
+You do this for the first time in Class 1, on a real brief of your own, and you do it again for every client after the course. Inside you get the six files the course teaches, empty, each carrying the questions it wants answered and one example of the standard.
+
+projects/_new-client/README.md maps the eight classes onto a one-week engagement, because the course takes eight classes to teach a process that takes about a week to run. If you finish this course thinking the method needs two months, you will never use it on a real job.
+
+No live client this week? projects/_brief-bank/ has four practice briefs that are deliberately not EduBridge: a desktop logistics dashboard, a Shopify storefront, a B2B landing page, and a Gulf booking app with Arabic and RTL. Each one breaks an assumption EduBridge would otherwise leave you with.
+
+Going deeper
+claudecodeguide.dev/for-designers has bite-sized guides for specific design workflows: brief decoding, critique gathering, research synthesis, handoff. Use it as your reference library once the skills are installed.
+
+Ostad: Claude for UI/UX Designers is the eight-class course that walks through this workspace with EduBridge Bangladesh as the running example.
+
+License
+MIT. Use these in your work, change them, share them. Attribution appreciated, not required.
+
+Built by
+Shadman Rahman. Product manager, former designer. These skills came out of real design work across Bangladesh and EU clients, then got road-tested with junior designers in the Ostad course.
+
 
 
