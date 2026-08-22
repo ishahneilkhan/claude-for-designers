@@ -32,18 +32,22 @@ clear upfront.
    PIN, OTP, hand-typed transaction ID, then an async wait for verification.
    Decision: both paths, bKash-first. Jamie's team is treating this as a logo swap;
    the actual gap is 3-4 extra screens and new error states his UK conversion data
-   (19%) never had to account for.
+   (19%) never had to account for. **[Confidence: confident — this is the flow shape
+   from direct personal experience paying with bKash, not a guess.]**
 
 3. **Language.** v1: English-only, Bengali "later." v2: Jamie's manager says Bengali
    is "strongly preferred" for MVP, Jamie himself said optional. Decision: design
-   Bengali UI strings now, ship English first if needed. This is unresolved between
-   Jamie and his manager, so it stays as an open question too, not a closed decision.
+   Bengali UI strings now, ship English first if needed. **[Confidence: do not know —
+   Jamie and his manager disagree with each other in the thread itself, so there's no
+   client-side answer to defer to yet. This stays an open question, not a decision I
+   can make for them.]**
 
 4. **Primary user.** v1: student primary, parent secondary. v2: Rafi says the client
    privately agrees parents are the real decision-makers, brief wasn't updated.
    Decision: design for the parent. This exposes the biggest problem in v1 — its own
    success metric (tutor signups) doesn't measure the person actually making the
-   booking decision.
+   booking decision. **[Confidence: confident — Rafi states the client already agrees
+   on this; the brief is just unupdated, not actually contested.]**
 
 5. **Scope creep.** v1: search, profile, booking, payment only. v2: client saw
    Preply and now wants video calling in the booking flow; a verification badge was
