@@ -1,4 +1,4 @@
----
+
 created: 2026-07-27
 type: reference
 status: complete
@@ -95,21 +95,46 @@ The difference is whether you can defend the choice. That defensibility is the t
 
 ## YOUR TURN
 
-<!-- Answer each question in the space under it. Work from a real screen Claude generated for you, not from memory. Every answer here is one fewer bad screen you have to reject later. -->
+**1. Open the last screen Claude generated for you. Name the one thing the
+user is supposed to do on it.**
 
-**1. Open the last screen Claude generated for you. Name the one thing the user is supposed to do on it.** If you cannot name it, write the sentence you should have sent back instead of accepting the screen.
+The one thing: send a booking request to the tutor. Everything else on the
+screen — tutor name, verified badge, qualifications, hourly rate — exists to
+make that one action feel safe enough to take, not to compete with it as a
+second call-to-action.
 
+**2. What do you delete on sight?**
 
-**2. What do you delete on sight?** Name three decorations you now remove without discussing them: the gradient, the third icon, the fifth equal-weight card, whatever yours are.
+- The centered hero block. My users scan left-to-right for trust signals
+  (badge, rate) before anything else; centering slows that scan down.
+- Any decorative gradient on cards or buttons — it reads as "app," not as a
+  BD-trusted payment surface. bKash-style flat surfaces read as more trustworthy
+  here than a polished gradient does.
+- A third icon on any card. If the card needs a badge icon and a rating icon,
+  it does not also need a decorative accent icon.
 
+**3. Write your type stack and your scale.**
 
-**3. Write your type stack and your scale.** Exact font names, exact sizes, and a line confirming Bangla coverage. Leave this blank and Claude will invent a stack for you every single time.
+Stack: Inter for English, Noto Sans Bengali for Bangla — confirmed to share
+similar x-height and weight so mixed EN/BN text doesn't visually clash.
+Scale: 12, 14, 16, 20, 28. No sizes outside this list. Bangla numerals are
+never used for prices — Arabic numerals only, since parents scan prices fastest
+in that format on BD banking apps.
 
+**4. Write your motion budget as one number, plus the single exception.**
 
-**4. Write your motion budget as one number,** plus the single exception you allow and why it is worth the cost on a slow connection.
+150ms ease-out, default. Exception: the payment verification wait state can
+hold longer (no fixed cap) because it's showing real async wait time for
+bKash/Nagad — faking a fast transition here would be dishonest about what's
+actually happening, and on 3G that dishonesty costs more trust than the wait
+itself.
 
+**5. Name the senior designer whose judgment you trust. What would they change?**
 
-**5. Name the senior designer whose judgment you trust.** What is the first thing they would change about your last screen? Write it as a rule so Claude applies it before you have to notice it.
+Rule: "Would this screen still make sense to someone on a cracked mid-range
+Android, mid-payment, mildly anxious about being scammed?" First thing they'd
+change on my last screen: shrink the hero/branding space at the top and move
+the verified badge higher, above the fold, before any decorative element. notice it.
 
 
 <!-- COURSE SCAFFOLDING: delete everything above YOUR TURN once you have filled it in. This becomes your real working file. -->
