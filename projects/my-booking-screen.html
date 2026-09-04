@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>বুকিং সারাংশ — EduBridge</title>
+<style>
+  :root {
+    --navy-900: #0A2540;
+    --navy-700: #16375A;
+    --green-600: #00A651;
+    --green-50: #E7F7EE;
+    --neutral-0: #FFFFFF;
+    --neutral-50: #F6F7F9;
+    --neutral-200: #E1E5EA;
+    --neutral-500: #6B7684;
+    --neutral-900: #171B21;
+
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-base: 16px;
+    --text-lg: 20px;
+    --text-xl: 24px;
+
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+
+    --touch-min: 48px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans Bengali', 'Inter', system-ui, sans-serif;
+    background: var(--neutral-50);
+    color: var(--neutral-900);
+    display: flex;
+    justify-content: center;
+  }
+
+  .screen {
+    width: 390px;
+    min-height: 100vh;
+    background: var(--neutral-50);
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Header */
+  .header {
+    background: var(--navy-900);
+    color: var(--neutral-0);
+    padding: var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  .back-btn {
+    width: var(--touch-min);
+    height: var(--touch-min);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: calc(-1 * var(--space-sm));
+    border: none;
+    background: none;
+    color: var(--neutral-0);
+    font-size: var(--text-lg);
+    cursor: pointer;
+  }
+  .header h1 {
+    font-size: var(--text-lg);
+    font-weight: 700;
+  }
+
+  /* Content */
+  .content {
+    flex: 1;
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+
+  .card {
+    background: var(--neutral-0);
+    border: 1px solid var(--neutral-200);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+  }
+
+  /* Tutor card */
+  .tutor-card { display: flex; gap: var(--space-md); align-items: center; }
+  .tutor-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-md);
+    background: var(--navy-700);
+    color: var(--neutral-0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--text-lg);
+    flex-shrink: 0;
+  }
+  .tutor-info h2 {
+    font-size: var(--text-base);
+    font-weight: 600;
+  }
+  .tutor-info p {
+    font-size: var(--text-sm);
+    color: var(--neutral-500);
+    margin-top: var(--space-xs);
+  }
+
+  /* Detail rows */
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--neutral-200);
+    font-size: var(--text-sm);
+  }
+  .detail-row:last-child { border-bottom: none; }
+  .detail-label { color: var(--neutral-500); }
+  .detail-value { font-weight: 600; text-align: right; }
+
+  /* Price breakdown — every fee visible, nothing revealed later */
+  .price-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--text-sm);
+    padding: var(--space-xs) 0;
+  }
+  .price-row.total {
+    border-top: 1px solid var(--neutral-200);
+    margin-top: var(--space-sm);
+    padding-top: var(--space-md);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    color: var(--navy-900);
+  }
+  .price-label { color: var(--neutral-500); }
+  .price-row.total .price-label { color: var(--neutral-900); }
+
+  /* Trust note */
+  .trust-note {
+    background: var(--green-50);
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--text-xs);
+    color: var(--navy-900);
+    display: flex;
+    gap: var(--space-sm);
+    align-items: flex-start;
+  }
+
+  /* CTA */
+  .cta-wrap {
+    padding: var(--space-md);
+    background: var(--neutral-0);
+    border-top: 1px solid var(--neutral-200);
+  }
+  .cta-btn {
+    width: 100%;
+    min-height: var(--touch-min);
+    background: var(--green-600);
+    color: var(--neutral-0);
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: var(--text-base);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .cta-sub {
+    text-align: center;
+    font-size: var(--text-xs);
+    color: var(--neutral-500);
+    margin-top: var(--space-sm);
+  }
+</style>
+</head>
+<body>
+<div class="screen">
+
+  <div class="header">
+    <button class="back-btn" aria-label="ফিরে যান">←</button>
+    <h1>বুকিং সারাংশ</h1>
+  </div>
+
+  <div class="content">
+
+    <div class="card tutor-card">
+      <div class="tutor-avatar">রহ</div>
+      <div class="tutor-info">
+        <h2>রাহাত হোসেন</h2>
+        <p>গণিত · ৮ম শ্রেণি</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="detail-row">
+        <span class="detail-label">শিক্ষার্থী</span>
+        <span class="detail-value">আয়েশা করিম</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">তারিখ ও সময়</span>
+        <span class="detail-value">১২ সেপ্টেম্বর, বিকাল ৪:০০</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">সময়কাল</span>
+        <span class="detail-value">১ ঘণ্টা</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="price-row">
+        <span class="price-label">সেশন ফি</span>
+        <span>৳ ৮০০</span>
+      </div>
+      <div class="price-row">
+        <span class="price-label">প্ল্যাটফর্ম ফি</span>
+        <span>৳ ৫০</span>
+      </div>
+      <div class="price-row total">
+        <span class="price-label">মোট</span>
+        <span>৳ ৮৫০</span>
+      </div>
+    </div>
+
+    <div class="trust-note">
+      <span>🔒</span>
+      <span>bKash ও Nagad-এর মাধ্যমে নিরাপদ পেমেন্ট। কোনো লুকানো চার্জ নেই — এই মূল্যই চূড়ান্ত।</span>
+    </div>
+
+  </div>
+
+  <div class="cta-wrap">
+    <button class="cta-btn">পেমেন্টে যান</button>
+    <p class="cta-sub">পরবর্তী ধাপে bKash / Nagad নির্বাচন করবেন</p>
+  </div>
+
+</div>
+</body>
+</html>
