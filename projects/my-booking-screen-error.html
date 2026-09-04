@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>বুকিং সারাংশ — সমস্যা হয়েছে</title>
+<style>
+  :root {
+    --navy-900: #0A2540; --navy-700: #16375A;
+    --green-600: #00A651;
+    --neutral-0: #FFFFFF; --neutral-50: #F6F7F9;
+    --neutral-200: #E1E5EA; --neutral-500: #6B7684; --neutral-900: #171B21;
+    --red-600: #C0392B; --red-50: #FBEAE8;
+    --text-xs: 12px; --text-sm: 14px; --text-base: 16px; --text-lg: 20px;
+    --space-xs: 4px; --space-sm: 8px; --space-md: 16px; --space-lg: 24px; --space-xl: 32px;
+    --radius-sm: 8px; --radius-md: 12px;
+    --touch-min: 48px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans Bengali','Inter',system-ui,sans-serif; background: var(--neutral-50); display:flex; justify-content:center; }
+  .screen { width: 390px; min-height: 100vh; display:flex; flex-direction:column; }
+  .header { background: var(--navy-900); color:#fff; padding: var(--space-md); display:flex; align-items:center; gap: var(--space-md); }
+  .back-btn { width: var(--touch-min); height: var(--touch-min); border:none; background:none; color:#fff; font-size: var(--text-lg); margin-left: calc(-1 * var(--space-sm)); }
+  .header h1 { font-size: var(--text-lg); font-weight:700; }
+  .content { flex:1; padding: var(--space-md); display:flex; flex-direction:column; gap: var(--space-md); }
+  .error-card {
+    background: var(--red-50);
+    border: 1px solid var(--red-600);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg) var(--space-md);
+    text-align: center;
+    margin-top: var(--space-xl);
+  }
+  .error-icon { font-size: 32px; margin-bottom: var(--space-sm); }
+  .error-card h2 { font-size: var(--text-base); font-weight:700; color: var(--navy-900); margin-bottom: var(--space-xs); }
+  .error-card p { font-size: var(--text-sm); color: var(--neutral-900); }
+  .cta-wrap { padding: var(--space-md); }
+  .cta-btn {
+    width: 100%; min-height: var(--touch-min);
+    background: var(--green-600); color:#fff; border:none;
+    border-radius: var(--radius-sm); font-size: var(--text-base); font-weight:600;
+  }
+  .cta-btn.secondary {
+    background: none; color: var(--navy-700); border: 1px solid var(--neutral-200);
+    margin-top: var(--space-sm);
+  }
+</style>
+</head>
+<body>
+<div class="screen">
+  <div class="header">
+    <button class="back-btn" aria-label="ফিরে যান">←</button>
+    <h1>বুকিং সারাংশ</h1>
+  </div>
+  <div class="content">
+    <div class="error-card">
+      <div class="error-icon">⚠️</div>
+      <h2>এই সময়টি আর খালি নেই</h2>
+      <p>আপনি বুকিং সম্পন্ন করার আগে অন্য একজন অভিভাবক এই স্লটটি বুক করেছেন। কোনো টাকা কাটা হয়নি।</p>
+    </div>
+  </div>
+  <div class="cta-wrap">
+    <button class="cta-btn">অন্য সময় দেখুন</button>
+    <button class="cta-btn secondary">টিউটর প্রোফাইলে ফিরুন</button>
+  </div>
+</div>
+</body>
+</html>
