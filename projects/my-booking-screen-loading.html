@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>বুকিং সারাংশ — লোড হচ্ছে</title>
+<style>
+  :root {
+    --navy-900: #0A2540; --navy-700: #16375A;
+    --green-600: #00A651; --green-50: #E7F7EE;
+    --neutral-0: #FFFFFF; --neutral-50: #F6F7F9;
+    --neutral-200: #E1E5EA; --neutral-500: #6B7684; --neutral-900: #171B21;
+    --text-xs: 12px; --text-sm: 14px; --text-base: 16px; --text-lg: 20px;
+    --space-xs: 4px; --space-sm: 8px; --space-md: 16px; --space-lg: 24px; --space-xl: 32px;
+    --radius-sm: 8px; --radius-md: 12px;
+    --touch-min: 48px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans Bengali','Inter',system-ui,sans-serif; background: var(--neutral-50); display:flex; justify-content:center; }
+  .screen { width: 390px; min-height: 100vh; display:flex; flex-direction:column; }
+  .header { background: var(--navy-900); color:#fff; padding: var(--space-md); display:flex; align-items:center; gap: var(--space-md); }
+  .back-btn { width: var(--touch-min); height: var(--touch-min); border:none; background:none; color:#fff; font-size: var(--text-lg); margin-left: calc(-1 * var(--space-sm)); }
+  .header h1 { font-size: var(--text-lg); font-weight:700; }
+  .content { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding: var(--space-xl); gap: var(--space-lg); text-align:center; }
+  .spinner {
+    width: 40px; height: 40px;
+    border: 3px solid var(--neutral-200);
+    border-top-color: var(--green-600);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .msg h2 { font-size: var(--text-base); font-weight:600; color: var(--neutral-900); margin-bottom: var(--space-xs); }
+  .msg p { font-size: var(--text-sm); color: var(--neutral-500); max-width: 260px; }
+</style>
+</head>
+<body>
+<div class="screen">
+  <div class="header">
+    <button class="back-btn" aria-label="ফিরে যান">←</button>
+    <h1>বুকিং সারাংশ</h1>
+  </div>
+  <div class="content">
+    <div class="spinner"></div>
+    <div class="msg">
+      <h2>সেশনের তথ্য নিশ্চিত করা হচ্ছে</h2>
+      <p>ইন্টারনেট সংযোগ ধীর হলে একটু সময় লাগতে পারে। পৃষ্ঠাটি বন্ধ করবেন না।</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
