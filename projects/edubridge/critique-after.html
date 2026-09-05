@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>টিউটর প্রোফাইল — v0.2 (after critique)</title>
+<style>
+  :root {
+    --navy-900: #0A2540; --navy-700: #16375A;
+    --green-600: #00A651; --green-50: #E7F7EE;
+    --neutral-0: #FFFFFF; --neutral-50: #F6F7F9;
+    --neutral-200: #E1E5EA; --neutral-500: #6B7684; --neutral-900: #171B21;
+    --text-xs: 12px; --text-sm: 14px; --text-base: 16px; --text-lg: 20px;
+    --space-xs: 4px; --space-sm: 8px; --space-md: 16px; --space-lg: 24px;
+    --radius-sm: 8px; --radius-md: 12px;
+    --touch-min: 48px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Noto Sans Bengali','Inter',system-ui,sans-serif; background: var(--neutral-50); display:flex; justify-content:center; }
+  .screen { width: 390px; min-height: 100vh; background:#fff; display:flex; flex-direction:column; }
+
+  /* Price + trust move above the fold, before the photo */
+  .top-summary {
+    background: var(--navy-900); color:#fff;
+    padding: var(--space-lg) var(--space-md);
+  }
+  .price-line { display:flex; justify-content:space-between; align-items:baseline; }
+  .price-line .label { font-size: var(--text-sm); opacity: 0.8; }
+  .price-line .amount { font-size: var(--text-lg); font-weight:700; }
+  .badge-row {
+    margin-top: var(--space-sm);
+    background: rgba(255,255,255,0.12);
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm);
+    font-size: var(--text-xs);
+    display:flex; align-items:center; gap: var(--space-xs);
+  }
+
+  .content { padding: var(--space-md); display:flex; flex-direction:column; gap: var(--space-md); }
+  .tutor-row { display:flex; gap: var(--space-md); align-items:center; }
+  .avatar {
+    width: 56px; height: 56px; border-radius: var(--radius-md);
+    background: var(--navy-700); color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    font-weight:700; font-size: var(--text-lg); flex-shrink:0;
+  }
+  .name { font-size: var(--text-base); font-weight:600; color: var(--neutral-900); }
+  .rating { font-size: var(--text-sm); color: var(--neutral-500); margin-top: var(--space-xs); }
+  .bio { font-size: var(--text-sm); color: var(--neutral-900); line-height:1.5; }
+
+  .cta-wrap { margin-top: auto; padding: var(--space-md); border-top: 1px solid var(--neutral-200); }
+  .cta-btn {
+    width: 100%; min-height: var(--touch-min);
+    background: var(--green-600); color:#fff; border:none;
+    border-radius: var(--radius-sm); font-size: var(--text-base); font-weight:600;
+  }
+</style>
+</head>
+<body>
+<div class="screen">
+
+  <div class="top-summary">
+    <div class="price-line">
+      <span class="label">মোট সেশন ফি</span>
+      <span class="amount">৳ ৫০০ / ঘণ্টা</span>
+    </div>
+    <div class="badge-row">
+      🔒 EduBridge কর্তৃক যাচাইকৃত — NID ও সার্টিফিকেট চেক করা হয়েছে
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="tutor-row">
+      <div class="avatar">রহ</div>
+      <div>
+        <div class="name">রাহাত হোসেন</div>
+        <div class="rating">★★★★★ ৪.৮ (১২ রিভিউ)</div>
+      </div>
+    </div>
+    <p class="bio">৫ বছরের বেশি অভিজ্ঞতা নিয়ে এইচএসসি শিক্ষার্থীদের গণিত পড়ান।</p>
+  </div>
+
+  <div class="cta-wrap">
+    <button class="cta-btn">বুকিং অনুরোধ পাঠান</button>
+  </div>
+
+</div>
+</body>
+</html>
