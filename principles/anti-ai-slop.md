@@ -16,101 +16,98 @@ tags: [ostad, batch-02, workbook, principles, anti-ai-slop, student-editable]
 
 **`design-taste.md` says what good is. This file says what to refuse.** Together, filled in, they are the actual answer to "Sonnet produces bad design". The complaint is nearly always a folder with nothing in it about taste, not a model that cannot design. Same model, same prompt, these two files present: different output.
 
-<!--
-COURSE NOTE for the student. This is not an instruction to Claude.
-
-Everything under the EXAMPLE heading is the instructor's list as of 2026. Read it, then extend it in YOUR TURN with the tells you see in your own work and your own feed.
-
-A rule you copied is worth less than a rule you got burned by. The copied ones still work, so keep them, but the file only becomes yours once your own entries are in it.
-
-The list is never finished. What reads as AI-slop in 2026 will read differently in 2027. Add entries as you find them. Junior designers who keep a personal anti-slop file build taste faster than the ones who do not.
--->
-
 ---
 
 ## EXAMPLE: the instructor's slop list (2026)
-
-<!-- Read it, keep what applies to you, then add your own in YOUR TURN. -->
-
-Some of these apply to UI Claude generates. Some apply to icons and decoration Claude might suggest. Some apply to copy. All of them are things to refuse to ship without a reason.
 
 ### Visual style slop
 
 **Purple-to-pink gradients.** The default "AI app" aesthetic. If your screen has a gradient and you cannot defend the specific colors with a brand reason, change to a single brand color or remove.
 
-**Generic "abstract tech" hero illustrations.** Floating geometric shapes, glowing orbs, low-poly heads, neural-network squiggles. If your hero needs an illustration, it should be specific to the product, not stock-AI-art that could illustrate any app.
+**Generic "abstract tech" hero illustrations.** Floating geometric shapes, glowing orbs, low-poly heads, neural-network squiggles.
 
-**Glassmorphism on everything.** Frosted-blur cards on every container is the 2024 equivalent of drop-shadows-on-every-button. Use it once, deliberately, where it earns its complexity.
+**Glassmorphism on everything.** Frosted-blur cards on every container.
 
-**Identical card grid.** Five cards in a 5x3 grid, each with identical heights, identical button placements, identical type weights. If everything is the same, nothing is important. Vary card size when card importance varies.
+**Identical card grid.** Five cards in a 5x3 grid, each with identical heights, identical button placements, identical type weights.
 
-**Stock-photo-energy people.** Smiling diverse team in a meeting, hands typing on a laptop, lightbulb floating above a head. Either commission real photography or do not use photos of people at all.
+**Stock-photo-energy people.** Smiling diverse team in a meeting, hands typing on a laptop, lightbulb floating above a head.
 
-**Random translucent dots and lines as decoration.** Particles in the background. Connector lines between concepts that mean nothing. Asymmetric "organic" shapes added for visual interest. Remove them.
+**Random translucent dots and lines as decoration.**
 
 ### Layout slop
 
-**Centered text where left-aligned would work.** Centered paragraphs are harder to read. Use center alignment only for hero text or single-line CTAs, never for body paragraphs.
+**Centered text where left-aligned would work.**
 
-**Three-up feature grid as default.** "Why us" sections with three identical cards and three identical icons. Either differentiate the three, or write one paragraph and skip the grid.
+**Three-up feature grid as default.**
 
-**Faux-3D buttons with multiple shadows.** Skeuomorphic buttons looked dated in 2018. If a button needs depth, one shadow at most. Modern buttons are flat or have a single subtle elevation.
+**Faux-3D buttons with multiple shadows.**
 
-**Hero with title plus subtitle plus CTA plus secondary CTA plus signup form plus social proof plus arrow pointing down.** Pick three of those. Heroes that try to do everything do nothing.
+**Hero with title plus subtitle plus CTA plus secondary CTA plus signup form plus social proof plus arrow pointing down.**
 
 ### Copy slop
 
-**"Empower."** Banned. Nobody is empowered by your dashboard. They are using it because they have to.
+**"Empower." "Seamlessly." "Leverage." "Robust." "Intuitive." "Delight."**
 
-**"Seamlessly."** If you have to say it, it isn't.
-
-**"Leverage."** Use. People use tools. They do not leverage them outside of finance.
-
-**"Robust."** Empty word. Tell me WHAT is robust about it. "Robust analytics" means nothing; "supports 50 concurrent connections" means something.
-
-**"Intuitive."** This word is a confession that you have not tested with real users. Either it is intuitive (in which case the user finds out, you do not need to say so) or it isn't.
-
-**"Delight."** When companies talk about delighting customers, they are usually annoying them. If your CTA says "delight your team," rewrite.
-
-**Three-item lists where two would do.** "Fast, reliable, and scalable." Pick the two that are actually true. Faux parallelism is an AI tell.
+**Three-item lists where two would do.**
 
 ### Component slop
 
-**Toast notifications for everything.** "Item added to cart" toast every click. "Settings saved" toast every keystroke. Toasts are interruptions; use them for things the user genuinely needs to know about, not as positive reinforcement.
-
-**Modals for things that should be a page.** If the content requires scrolling, it is not a modal. It is a page that should have a URL.
-
-**Empty states that say "No data yet" with a sad cloud.** Empty states should explain why and offer the next action. "You have not made a booking yet. Browse tutors to get started." Not just "Nothing here."
-
-**Loading spinners that show indefinitely.** If you do not know how long something will take, use a progress bar with vague stages, not a spinner. Spinners-of-unknown-duration are user-hostile.
-
-**Generic error messages.** "Something went wrong" tells the user nothing. Either tell them WHAT went wrong and what to do, or do not show the error at all.
+**Toast notifications for everything. Modals for things that should be a page. Empty states that say "No data yet" with a sad cloud. Loading spinners that show indefinitely. Generic error messages.**
 
 ### The meta-rule
 
-The strongest anti-slop signal is **specificity**. AI defaults to generic because generic gets approval from the widest audience. Your job is to make the work specific to a real product, a real user, a real market. The more specific you are, the less it looks AI-generated.
-
-When Claude proposes something generic, ask: "What would change about this design if we knew the user is a 45-year-old auntie in Comilla checking her son's tutor at 9pm on a borrowed phone?" If nothing changes, the design is not specific enough.
+The strongest anti-slop signal is **specificity**. When Claude proposes something generic, ask: "What would change about this design if we knew the user is a 45-year-old auntie in Comilla checking her son's tutor at 9pm on a borrowed phone?" If nothing changes, the design is not specific enough.
 
 ---
 
 ## YOUR TURN
 
-<!-- Answer each question in the space under it. Pull from real output, not from memory. This list only protects you if the entries are yours. -->
+**1. Find one output Claude gave you that you would not show a client. Name the exact tell in one sentence.**
 
-**1. Find one output Claude gave you that you would not show a client. Name the exact tell in one sentence.** Not "it looked AI." The specific element: which gradient, which grid, which sentence.
+The first booking screen Claude generated had a centered hero with a
+purple-to-blue gradient behind the tutor's profile card — it looked like a
+generic SaaS landing page, not a payment-adjacent trust screen a worried
+parent needs to scan fast.
 
+**2. Add three slop patterns of your own.**
 
-**2. Add three slop patterns of your own** that are not on the list above. Write the fix next to each one, not just the complaint.
+- **Verified badge as a decorative icon instead of a real element.** Claude
+  drew a checkmark-in-a-circle with no label. Fix: badge must say "Verified
+  by EduBridge" with a tap-to-expand showing what was checked — otherwise
+  it's decoration, not trust.
+- **Price shown only in abbreviated, low-contrast text (e.g. "৳500/hr" in
+  tiny grey type).** Fix: price must be full-size, same weight as the tutor
+  name, never lower-contrast than surrounding text — this is the number
+  parents scan for first.
+- **A single global "Continue" button used for both "view details" and
+  "confirm payment."** Fix: every screen gets exactly one primary action, and
+  its label names the actual outcome ("Send Booking Request," not
+  "Continue").
 
+**3. List five words you ban in your product copy.**
 
-**3. List five words you ban in your product copy.** If your interface is Bangla and English mixed, add the Bangla equivalents you are tired of seeing.
+- "Seamless" / "নিরবচ্ছিন্ন" — never true on 3G, don't promise it.
+- "Empower" / "ক্ষমতায়ন" — nobody feels empowered booking a tutor, they feel
+  relieved when it works.
+- "Instant" — bKash/Nagad verification is not instant; saying so breaks trust
+  the moment it isn't.
+- "Simply" / "শুধু" — as in "simply tap here." If it were simple I wouldn't
+  need to say so.
+- "Robust" — empty word on a parent-facing screen. Say what's actually true:
+  "checked before every booking," not "robust verification."
 
+**4. Write your own version of the specificity test.**
 
-**4. Write your own version of the specificity test.** One sentence describing your real user, doing the real task, on their real phone. If a design does not change when you ask that question, it is not specific enough yet.
+A 42-year-old mother in Dhaka, on a three-year-old Android phone, checking
+this screen at 9pm after her son mentions the exam is in six weeks — if the
+badge, the price, or the CTA label don't change when I picture her instead of
+"a user," the design isn't specific enough yet.
 
+**5. Which rule on this list do you break on purpose, and what is your defense?**
 
-**5. Which rule on this list do you break on purpose, and what is your defense?** A rule you can defend breaking is taste. A rule you broke without noticing is slop.
-
-
-<!-- COURSE SCAFFOLDING: delete everything above YOUR TURN once you have filled it in. This becomes your real working file. -->
+I break "three-item lists where two would do" on the price breakdown card —
+session fee, platform fee, total is three rows, not two. My defense: this
+isn't a marketing list of adjectives, it's a literal fee breakdown, and the
+contract treats hidden or late-revealed fees as a hard blocker. Cutting a row
+there would be hiding a cost, not tightening copy — the rule protects against
+padding, and nothing here is padding.
