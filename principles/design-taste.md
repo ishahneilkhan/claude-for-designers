@@ -1,44 +1,52 @@
+---
 created: 2026-07-27
 type: reference
 status: complete
 class: 4
-tags: [ostad, batch-02, workbook, principles, anti-ai-slop, student-editable]
+tags: [ostad, batch-02, workbook, principles, design-taste]
 project: EduBridge Bangladesh
 ---
 
-# Anti-AI-Slop Rules
+# Design Taste — EduBridge Bangladesh
 
-## YOUR TURN
+**What this file is for:** what "good" looks like on this project, in my own
+words, tied to real content — not "clean and modern."
 
-**1. Find one output Claude gave you that you would not show a client. Name
-the exact tell in one sentence.**
+## My taste calls
 
-The booking screen Claude first generated had a centered hero with a soft
-purple-to-blue gradient background behind the tutor's profile card — it looked
-like a generic SaaS landing page, not a payment-adjacent trust screen a
-worried parent needs to read fast.
+1. **Trust signals are data, not icons.** A bare checkmark means nothing to a
+   parent who's scared of being scammed. "Verified by EduBridge — NID and
+   certificate checked" is taste. A checkmark with no label is decoration
+   wearing a trust costume.
 
-**2. Add three slop patterns of your own.**
+2. **Price is never demoted.** The total cost gets the same size and weight
+   as the tutor's name — never smaller, never greyer. This is the number a
+   worried parent scans for first, before they read anything else.
 
-- **Verified badge as a decorative icon instead of a real element.** Claude
-  drew a generic checkmark-in-a-circle with no label. Fix: badge must say
-  "Verified by EduBridge" with a tap-to-expand showing what was checked —
-  otherwise it's decoration, not trust.
-- **Price shown only in an abbreviated form (e.g. "৳500/hr" in tiny grey
-  text).** Fix: price must be full-size, same weight as the tutor name, never
-  lower-contrast than surrounding text — this is the number parents scan for
-  first.
-- **A single global "Continue" button used for both "view details" and "confirm
-  payment."** Fix: every screen gets exactly one primary action, and its label
-  names the actual outcome ("Send Booking Request," not "Continue").
+3. **One primary action per screen, named for the real outcome.** Not
+   "Continue," not "Next." "Send Booking Request." "Proceed to Payment." The
+   label should tell you what happens if you tap it, without needing to read
+   anything else on the screen.
 
-**3. List five words you ban in your product copy.**
+4. **Bengali is not the smaller font.** If English and Bengali strings sit on
+   the same screen, Bengali gets the same size, weight, and prominence.
+   Treating Bengali as a caption under the "real" English text is a taste
+   failure specific to this market.
 
-- "Seamless" / "নিরবচ্ছিন্ন" — never true on 3G, don't promise it.
-- "Empower" / "ক্ষমতায়ন" — nobody feels empowered booking a tutor, they feel
-  relieved when it works.
-- "Instant" — bKash/Nagad verification is not instant; saying so breaks trust
-  the moment it's not.
-- "Simply" / "শুধু" — as in "simply tap here." If it were simple I wouldn't
-  need to say so.
-- "Robust" —
+5. **A payment-adjacent screen stays calm.** Confirmation and receipt screens
+   should feel quiet and uncluttered. Busy design on the screen where money
+   moves reads as untrustworthy to a first-time mobile-money user — the
+   opposite of what decoration is usually trying to do.
+
+6. **Color follows meaning, not mood.** Navy is structure (headers, static
+   info). Green is reserved for the one action that moves the booking
+   forward. Green as a random accent on an unrelated icon dilutes what it
+   means everywhere else on the screen.
+
+7. **Loading and error states get the same care as the happy path.** A
+   spinner with no message, on a connection that might drop from 4G to 3G
+   mid-load, is not a minor omission — it's the exact moment a parent decides
+   the app is broken and closes it.
+
+These are the calls `design-taste.md` and `anti-ai-slop.md` together are
+supposed to give Claude before it generates anything for this screen.
