@@ -1,5 +1,5 @@
 ---
-created: 2026-07-27
+created: 2026-09-09
 type: workbook
 status: complete
 tags: [ostad, batch-02, career-vault, class-08, interview]
@@ -7,258 +7,176 @@ tags: [ostad, batch-02, career-vault, class-08, interview]
 
 # Interview Answer Bank
 
-**What this file is for:** structured answers to the questions you will actually be asked, written down once so you are not improvising in the room.
-
-**Why Claude needs it:** when you ask Claude to run a mock interview or tighten an answer, this file gives it your real material. Without it, it invents a career for you and you end up rehearsing someone else's.
-
-**Class:** Class 8. First version in class, then updated after every interview you sit.
-
-The structure is what you keep. The exact words should come out fresh. An answer you have memorized word for word sounds worse than one you have thought about, because the interviewer can hear the recital.
-
-Every answer in this file is built on one idea: **name a decision, not a tool.** The interviewer is not trying to find out whether you used AI. They assume you did. They are trying to find out whether there is judgment behind the output. So every answer has you as the subject of the verb. I decided. I rejected. I cut. I was wrong about.
-
-STAR is the format for the behavioral answers: situation, task, action, result. Two sentences per part, four parts, roughly sixty to ninety seconds spoken. Add a fifth line for what you learned, because that is the part interviewers actually score.
-
----
-
-## The EduBridge example
-
-This is the example, from the designer who built the Class 6 booking screen. Do not copy it. Your decisions were different, and the specificity is the whole point.
-
-### The answer for "but didn't AI do this for you?"
-
-You have about thirty seconds before the interviewer's opinion sets. Three beats.
-
-Beat one, five seconds: accept the question without getting defensive.
-Beat two, fifteen seconds: move the frame from outputs to decisions.
-Beat three, ten seconds: land one specific example.
-
-"Fair question, and worth asking. The way I work is that I direct the decisions and Claude makes the execution fast. On this project specifically: I decided the brief was wrong about who the user was and rewrote it around parents instead of students. I decided the screen had to load on 3G, which is why the photo sits below the fold. And I rejected the first three versions of the button copy, because 'Get Started' does not tell a parent what happens when they tap it. The HTML is the easy part. What you are hiring is the judgment that the brief was wrong."
-
-Look at what is doing the work there. "Fair question" disarms. Three active verbs with three specific decisions attached. And the last sentence reframes what design is worth. The answer never denies AI use, because denying it would be both false and beside the point.
-
-### STAR: "Tell me about a time you disagreed with a stakeholder"
-
-Situation: "On the EduBridge project, the offshore client's brief said desktop-first. The local PM said mobile is the only thing that matters in this market."
-
-Task: "I had three days before sprint kickoff and could not design both. Somebody had to resolve it, and I was the one holding the brief."
-
-Action: "I wrote a one-page memo with three things in it: the device share for this market, the PM's own statement quoted directly, and the brief's stated success metric, which only made sense on mobile. I sent it and asked for a decision rather than arguing for one."
-
-Result: "The client signed off on mobile-first inside 24 hours."
-
-Learned: "Briefs are negotiable when you bring evidence instead of an opinion. The thing that moved them was their own success metric, not my preference."
-
-### STAR: "Tell me about a time you failed"
-
-The two traps here are picking something that is not a failure ("I care too much") and picking something disqualifying ("I missed a deadline and the client left"). What you want is a judgment call you made with the information you had, that turned out wrong, that you can explain.
-
-Situation: "I assumed parents wanted document-level verification visible on the booking screen. NID, qualifications, background check, all as badges."
-
-Task: "I needed to design the trust signal for the screen, and I treated my assumption as settled."
-
-Action: "I designed three badge variants over two days. Then I tested with five parents."
-
-Result: "Three of the five told me they would rather see a short introduction video from the tutor than a row of documents. Two days of work on the wrong solution."
-
-Learned: "The mistake was not the badges. It was testing the assumption after the design instead of before it. Now I test the assumption first, even when I am confident, and especially when I am confident."
-
-### STAR: "Tell me about a project you are proud of"
-
-Use the five parts from `02-portfolio-story.md` in order: what the brief was, how you directed the work and what you built, what problem you actually solved, what you rejected, what the outcome was including what you got wrong. Under ninety seconds spoken. If it runs longer, you are describing screens instead of decisions.
-
-### "Why do you want to work here?"
-
-The lazy answer praises the company. The good answer connects their work to your positioning.
-
-"I want to work somewhere that treats this market as its own thing rather than a translation of a Western product. From what I have seen, you made a specific choice about [the thing you noticed], which is the kind of decision I am trying to be in the room for. I am also at the stage where I learn fastest from people five to ten years ahead of me on this exact path, and your team has that."
-
-If you cannot fill in the middle of that with something real about them, you should not be applying.
-
-### Live case: "design a feature for X user under Y constraint"
-
-You think out loud. Two rules.
-
-Interrogate before you sketch. "Before I start, can I confirm five things: who the user is, what device they are on, what they are trying to get done, what success looks like, and what is explicitly out of scope." Then take notes on the answers. This is the same brief interrogation from Class 3, done verbally.
-
-Make every trade-off audible. Not "I would design X." Instead: "I would design X because of Y, knowing that costs me Z." That sentence is the one that separates a designer from someone who produces screens.
-
-If the interviewer cuts you off with "just design it," answer anyway, but note it. A team that does not want to hear the constraint question is telling you how they work.
-
-### The process questions, which are a different genre
-
-Everything above is incident-based: "tell me about a time". These five are not. They ask **how you operate**, and agency interviews lean on them heavily, because they are hiring someone who will be put in front of a client.
-
-You already have the answers. Every one of them is a file in your workspace. That is the whole point of having done the course.
-
----
-
-**"How do you work on a brief?"**
-
-*Weak:* "I read it carefully, ask questions if anything is unclear, then start wireframing."
-
-*Strong:* "I assume the brief is out of date before I open it, because it usually is. First pass I read every version I was sent together, not one at a time, because contradictions only show up side by side. Then I pick the questions only I can answer, the ones where two readings are both defensible, and I answer them with a confidence label attached. On the last project three of my answers were guesses and I marked them as guesses. The client corrected one of them in week one instead of week four."
-
-*Why it works:* it describes a repeatable method with a specific outcome, and the confidence labelling is unusual enough to be remembered. **Source: `brief-interrogated.md`.**
-
----
-
-**"Your boss changes the brief halfway through. What do you do?"**
-
-*Weak:* "I stay flexible and adapt. Change is part of the job."
-
-*Strong:* "I check whether it is a revision or new scope, because they get handled differently. A revision I absorb. New scope gets a sentence: happy to take that on, it is roughly this many days, that puts it outside the current sprint, want me to quote it. That is not a refusal, it is a price. Last project video calling arrived after the budget was agreed. I said yes to it and quoted it separately, and it got approved as extra."
-
-*Why it works:* it shows you can be accommodating without being exploited, which is exactly what they are checking. **Source: `engagement.md`.**
-
----
-
-**"How do you negotiate?"**
-
-*Weak:* "I try to find a win-win and keep the relationship positive."
-
-*Strong:* "I try to have the scope written down before a number exists, because after the number everything is a negotiation instead of a definition. When I do have to push back I bring a count rather than an opinion. On the last project the client wanted one global checkout and had conversion data supporting it. I did not argue with the data. I counted the screens their flow was missing for this market, listed the five error states nobody had specified, and let the count make the argument. And I never discount without removing scope, because that teaches the client my first number was invented."
-
-*Why it works:* three concrete principles and a real example, and the last line signals you have been burned and learned. **Source: `engagement.md` and `critique-notes.md`.**
-
----
-
-**"How do you plan a piece of work?"**
-
-*Weak:* "I break it into phases and set milestones."
-
-*Strong:* "I break the brief into tasks before I design anything, and then I deliberately do only one of them first. The mistake I used to make was starting the whole product at once, so nothing was finishable and everything was eighty percent done. Now the first deliverable is one screen, complete, including the empty and error states, because that is what surfaces the questions the brief did not answer. The rest gets easier once one thing is genuinely finished."
-
-*Why it works:* it names a mistake and the correction, which reads as experience rather than theory. **Source: `/brief-to-tasks`, Class 6.**
-
----
-
-**"You have an idea and you want to pitch it to your boss. How?"**
-
-*Weak:* "I'd put together a presentation and explain the benefits."
-
-*Strong:* "I bring the alternative with it. An idea on its own asks them to do the work of comparing, and busy people say no to that. So I show what we do now, what I am proposing, the one thing that decided it for me, and what my option gives up. The last part matters most. If I pretend there is no downside they stop believing the rest. When I moved a verification badge above the tutor's name I could point at the finding that decided it and say plainly what the old layout did better."
-
-*Why it works:* naming the tradeoff is what separates someone with opinions from someone with judgment. **Source: `critique-notes.md`, Class 4.**
-
----
-
-### How to use these five
-
-Do not memorise the strong versions. They are somebody else's project. Take each question, open the file named under it, and write your own from what is actually in there. If a file is thin, that is the honest signal about which part of your process needs work, not a reason to invent a better answer.
-
-**Say all five out loud once.** Written answers that fall apart when spoken are not ready, and these are longer than the STAR answers, which makes them easier to ramble.
-
-### Three questions you ask them
-
-Always have three ready. What you ask reveals what you care about.
-
-About the work: "What is a design decision the team made recently that somebody internally disagreed with, and how did that get settled?"
-
-About growth: "What does junior to senior look like here in practice? Not the titles, the actual scope change."
-
-About AI: "How does the team use AI today, and what is something you have deliberately chosen not to use it for?"
-
-That third one matters. A team with no position on AI is either not paying attention or has not had to think about it yet. A team with explicit limits has done the thinking.
-
-### Things not to say
-
-- "I am a perfectionist." Reads as evasion.
-- "I am a quick learner." Everyone says it, so it carries nothing.
-- "I am passionate about design." Replace it with one specific thing you did that nobody asked you to do.
-- "I can do anything you need." No, and claiming it makes your real strengths less believable.
-- "I use AI for everything." Say you use it. Do not suggest you need it.
-
-### Night before, morning of
-
-Night before: read `01-positioning.md` once. Read the AI-objection answer twice. Read the story for whichever project you will be asked about. Use their product for ten minutes if it exists. Find one thing they shipped or wrote recently and form an opinion on it.
-
-Morning of: eat something. Say your elevator pitch out loud once. Then stop reading these notes. The structure is in your head. Go in fresh.
-
----
-
 ## YOUR TURN
-
-<!-- COURSE SCAFFOLDING: delete everything above YOUR TURN once you have filled it in. This becomes your real working file. -->
-
-Write your own answers below, grounded in the work you actually did in Class 6. Not the EduBridge example. Yours.
-
-The test for every answer: pull out the sentence that names the decision. If you cannot find one, or if the only concrete thing in the answer is a tool name, the answer is not finished. "I used Claude Code to build the screen" is not an answer to anything. "I decided the photo goes below the fold because the page has to load on 3G" is.
-
-Use STAR for questions 2, 3 and 4. Two sentences per part, plus one line on what you learned.
-
-When the drafts are done, open Claude Code at the root of this workspace on Sonnet 5 at medium effort. Ask it to interview you: it asks the question, you answer from memory without looking, then it tells you which decision you failed to name. Do that round three times. Fits in one session.
 
 ### 1. What do you say when someone insinuates AI did your work?
 
-Write it in three beats: accept the question, move the frame to decisions, land one specific example. Then name three decisions from your own project that you can list inside it. Not three things Claude produced. Three calls you made and could defend.
+**Decision one:** I caught that the brief's own success metric (tutor
+signups) didn't measure the person actually making the booking decision
+(the parent), and rewrote the brief around the parent as primary user.
 
-Decision one:
+**Decision two:** I rejected the client's assumed card-first payment flow
+and argued for bKash/Nagad as primary, backed by a screen count — 3 to 4
+extra screens and new error states their UK conversion data never had to
+account for.
 
-Decision two:
+**Decision three:** I moved the price and verification badge above the
+tutor photo after a 3G-load-order critique showed the heaviest asset (the
+photo) was blocking the most important information on the slowest
+connections.
 
-Decision three:
+**Your answer:**
 
-Your answer:
+"Fair question. The way I work is that I direct the decisions and Claude
+makes the execution fast. On this project specifically: I caught that the
+brief was measuring the wrong person's behavior and rewrote it around the
+parent, not the tutor. I rejected the card-first payment flow the client
+assumed and made the case for bKash/Nagad with a screen count, not just an
+opinion. And I moved the price above the fold after tracing what actually
+loads first on a throttled 3G connection. The HTML is the easy part. What
+you're hiring is the judgment that the brief was wrong."
 
 ### 2. STAR: a time you disagreed with someone who outranked you
 
-Real disagreement, real stakes, real resolution, including if the resolution went against you. A client, a PM, a senior designer, a teacher, a group project lead. What you brought to the disagreement is the answer, not who won.
+**Situation:** The EduBridge brief measured success by tutor signups, but
+my read of the brief's own context showed parents were the ones who decide
+and pay. The client's team (Jamie, the PM) had not flagged this as a
+problem.
 
-Situation:
+**Task:** I had to decide whether to design against the metric as written
+or push back on it before starting, knowing pushback on a paying client's
+own success metric risked reading as overstepping.
 
-Task:
+**Action:** I wrote it up as a reported gap, not an opinion — named which
+of the six brief-completeness points was failing, cited the specific
+contradiction (metric measures tutor signups, parent makes the booking),
+and sent one direct question asking which side to design for, with a date.
 
-Action:
+**Result:** The gap was acknowledged rather than dismissed, and I proceeded
+designing for the parent, which the brief's own trust and payment concerns
+already pointed to anyway.
 
-Result:
-
-What I learned:
+**What I learned:** Framing a disagreement as a reported gap instead of a
+concern is what keeps it answerable instead of dismissible. "Section 3 has
+no success metric that matches the primary user" gets you an answer.
+"I have concerns about the metric" gets you told to just proceed.
 
 ### 3. STAR: a time you were wrong
 
-One judgment call you made and regret. The decision, what it cost, how you found out, what you changed. This should be the same failure you wrote in part 5 of `02-portfolio-story.md`, said out loud instead of written.
+**Situation:** My first version of the booking screen led with a large
+tutor photo at the top, centered, with the price and verification badge
+below the fold — I assumed a photo-forward layout would read as more
+trustworthy and premium.
 
-Situation:
+**Task:** I needed to design the highest-trust screen in the flow, the one
+right before payment, for a parent who is specifically worried about being
+scammed.
 
-Task:
+**Action:** I ran the screen through three perspectives by hand — a
+confused user on 3G, a skeptical parent, a Bengali-first reader — before
+running the automated critique pass.
 
-Action:
+**Result:** The 3G-user lens showed the heaviest asset on the screen (the
+photo) was blocking the price and badge from rendering first, on exactly
+the connection this project is designed against. I rebuilt the layout with
+price and verification above the photo.
 
-Result:
-
-What I learned:
+**What I learned:** "Premium-looking" and "trustworthy on a slow
+connection" are not the same design problem, and I'd defaulted to the
+first one without checking against the actual device constraint. Now I
+check the load order against the target device before I check how a
+layout looks in a static screenshot.
 
 ### 4. STAR: the project you are proud of
 
-The Class 6 screen. Compress the five parts of your portfolio story into STAR shape and time yourself saying it. If you go past ninety seconds, you are describing what the screens look like. Cut back to what you decided.
+**Situation:** EduBridge's brief arrived contradictory across three
+versions — desktop-first vs mobile-first, card-only vs bKash-first,
+student-primary vs parent-primary — and I was the one holding it before any
+design work started.
 
-Situation:
+**Task:** Resolve the contradictions with evidence rather than guesswork,
+then design and build one real screen — the parent-facing booking summary —
+end to end.
 
-Task:
+**Action:** I ran a six-point completeness test on the brief, wrote three
+answers with honest confidence labels instead of guessing, sent a scope
+email naming the specific gaps and one question each, then built the
+screen with a token system locked in first so color and spacing decisions
+didn't get relitigated during the build.
 
-Action:
+**Result:** A working HTML screen, mobile-first, tokens traced end to end,
+with the price and trust badge above the fold and bKash/Nagad as the
+primary payment path — plus three extra states (loading, error, and a
+long-name edge case) nobody had asked for.
 
-Result:
-
-What I learned:
+**What I learned:** The screen only works because the brief work happened
+first. Every fix I made in the build — payment order, information
+hierarchy, fee transparency — traces back to a specific gap I found before
+I opened Figma.
 
 ### 5. Answer the five process questions
 
-One paragraph each, in your own words, from your own files. Open the file named under each one first.
+**How do you work on a brief?**
 
-- How do you work on a brief? (`brief-interrogated.md`)
-- Your boss changes the brief halfway through. What do you do? (`engagement.md`)
-- How do you negotiate? (`engagement.md`, `critique-notes.md`)
-- How do you plan a piece of work? (`/brief-to-tasks`)
-- How do you pitch an idea? (`critique-notes.md`)
+I assume the brief is out of date before I open it, because on this
+project it was — three versions contradicted each other on device,
+payment, and who the primary user even was. I read every version together
+rather than one at a time, because the contradictions only show up side by
+side. Then I run a six-point completeness test and answer only the
+questions nobody else can answer for me, each with a confidence label. On
+EduBridge, three of my answers were genuinely uncertain and I marked them
+that way instead of guessing confidently — one of them (Bengali as
+required vs optional) turned out to still be unresolved between two people
+on the client side, which is exactly the kind of thing a confident guess
+would have hidden. *Source: `brief-v3-interrogated.md`.*
 
-Then say each one out loud once. Fix whatever falls apart when spoken.
+**Your boss changes the brief halfway through. What do you do?**
+
+I check whether it's a revision or new scope, because they get handled
+differently — a revision I absorb, new scope gets a written estimate before
+I start on it. On EduBridge, video calling and a tutor verification badge
+both surfaced in the client's PM thread after the 3-lakh budget was
+already agreed. I didn't build either of them into the current cycle;
+I named them explicitly as out-of-scope in the engagement doc, so
+they're documented as new work rather than absorbed silently.
+*Source: `engagement.md`.*
+
+**How do you negotiate?**
+
+I try to get scope written down before a number exists, because once a
+number exists everything becomes a negotiation instead of a definition. On
+EduBridge, the client's team was treating the payment integration as a
+"logo swap" from card to bKash. I didn't argue with that framing directly —
+I counted the actual screens the bKash/Nagad flow adds (app-switch, PIN,
+OTP, hand-typed transaction ID, async verification wait) against their own
+UK conversion data, which gave the client a number to react to instead of
+my opinion to argue with. *Source: `engagement.md`, `critique-notes.md`.*
+
+**How do you plan a piece of work?**
+
+I break the brief into what's in scope and what's explicitly out before
+I design anything, then I build one screen completely rather than
+sketching the whole product thinly. On EduBridge that meant naming four
+things as explicitly out of scope (video calling, search, tutor onboarding,
+profile translation) before touching Figma, then shipping one screen — the
+booking summary — with its loading, error, and edge-case states, not just
+the happy path. *Source: `engagement.md`, Class 6.*
+
+**How do you pitch an idea?**
+
+I bring the alternative with the pitch, not just the idea on its own.
+When I moved the price and verification badge above the tutor photo, I
+didn't just present the new layout — I showed the old layout, the specific
+finding that decided it (the 3G load-order problem), and what the new
+layout gives up (a less "premium-looking" first screenshot). Naming what
+you lose is what makes the pitch credible instead of one-sided.
+*Source: `critique-notes.md`.*
 
 ### 6. What three questions do you ask them?
 
-One about the work, one about how you would grow there, one about how the team handles AI. Write your actual wording, not the categories.
-
-1.
-2.
-3.
+1. "What's a design decision the team made recently that someone
+   internally disagreed with — how did that get resolved?"
+2. "What does the path from junior to mid-level actually look like here —
+   not the title change, but what scope of work shifts?"
+3. "How does the team use AI in the design process today, and is there
+   anything you've deliberately decided not to use it for?"
