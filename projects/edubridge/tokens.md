@@ -1,4 +1,3 @@
----
 created: 2026-07-27
 type: reference
 status: complete
@@ -65,6 +64,43 @@ Base unit: 4px.
 
 Ceiling is 220ms because the target device is a mid-range Android on 4G that
 can drop to 3G — a longer transition reads as a hang, not as polish.
+
+## The receiver's test — three questions answered
+
+**1. "What happens when…?" — empty, error, loading, the forty-character name.**
+
+Empty state uses `text.muted` (`#9CA3AF`) at `text.body` size, never a blank
+box. Error state uses `accent.danger` (`#C0392B`) for the message text and
+`bg.surface` with a `border.default` border for the card — never a full red
+background, which reads as more alarming than the situation (a taken slot,
+not a failed payment). Loading state shows a spinner using `accent.primary`
+against `bg.surface`, with a one-line message in `text.body.small` — never
+a bare spinner with no text. A forty-character tutor or student name wraps
+using `word-break: break-word` inside its card; it never truncates with an
+ellipsis, because a parent needs to confirm the full name before paying.
+
+**2. "Which of these is the real value?" — two greens, three spacings.**
+
+There is exactly one green in this system: `accent.primary` (`#00A651`).
+Any other green seen in a mockup or reference is not a token — it does not
+exist in this file, so it does not ship. On spacing: `space.4` (16px) is
+the real value for card padding and CTA padding; `space.3` (12px) is for
+tight internal gaps (icon-to-label); `space.6` (24px) is for separation
+between stacked cards. If a screen shows a fourth spacing value that isn't
+in the Spacing table above, it is a mistake, not a new token — round it to
+the nearest listed value instead of inventing one.
+
+**3. "Do I build this once or five times?" — component, or coincidence.**
+
+The CTA button is one component (`button/primary`, with `Default` and
+`Pressed` variants) — build it once, reuse everywhere a primary action
+appears. The price-breakdown row (label left, value right, `border.default`
+divider) is a component too — it repeats identically across session fee,
+platform fee, and total, so it is not a coincidence that they look alike.
+The tutor avatar-and-name row is also one component, reused on the booking
+summary, the tutor profile, and anywhere else a tutor is referenced. Only
+the top navy summary block (`bg.inverse`) is screen-specific and does not
+need to be a component — it appears once, on this screen only.
 
 ## The one rule your system has to enforce
 
